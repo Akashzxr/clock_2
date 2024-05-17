@@ -1,0 +1,128 @@
+body{
+    background-color: black;
+}
+
+.clock-container{
+    height: 20rem;
+    width: 20rem;
+    background-color: black;
+    margin: 15rem 40rem;
+    border-radius: 50%;
+    border: 4px double white;
+}
+
+.centre-circle{
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 9.7rem;
+    left: 9.7rem;
+    z-index: 1;
+}
+
+.second-arrow{
+    background-color: grey;
+    width: 2px;
+    height: 150px;
+    position: relative;
+    left: 10rem;
+    z-index: 0;
+    transform-origin: bottom center;
+}
+
+
+.second-arrow::before{
+        content: '';
+        position: absolute;
+        left: -3px;
+        bottom: 145px;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        rotate: 178deg;
+        border-top: 7px solid grey;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+}
+
+.minute-arrow{
+    background-color: rgb(185, 185, 192);
+    width: 4px;
+    height: 135px;
+    position: relative;
+    bottom: 8.4rem;
+    left: 9.9rem;
+    z-index: 0;
+    transform-origin: bottom center;
+}
+
+.minute-arrow::before{
+    content: '';
+    position: absolute;
+    left: -4px;
+    bottom: 135px;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    rotate: 178deg;
+    border-top: 7px solid rgb(185, 185, 192);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.hour-arrow{
+    background-color: rgb(152 152 152);
+    width: 6px;
+    height: 96px;
+    position: relative;
+    bottom: 14.4rem;
+    left: 9.8rem;
+    z-index: 0;
+    transform-origin: bottom center;
+}
+
+.hour-arrow::before{
+    content: '';
+    position: absolute;
+    left: -3px;
+    bottom: 96px;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    rotate: 178deg;
+    border-top: 7px solid rgb(152 152 152);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.txt-12,.txt-3,.txt-6,.txt-9{
+    color: white;
+    font-size: 28px;
+    position: relative;
+}
+
+.txt-12{
+    bottom: 24rem;
+    left: 9.1rem;
+}
+
+.txt-3{
+    bottom: 17.4rem;
+    left: 18.6rem;
+}
+
+.txt-6{
+    bottom: 11rem;
+    left: 9.6rem;
+}
+
+.txt-9{
+    bottom: 21.4rem;
+    left: 1rem;
+}
+
